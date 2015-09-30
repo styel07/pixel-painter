@@ -1,0 +1,41 @@
+#container {
+  width: 100%;
+}
+
+#leftCol {
+  width: 30%;
+  float: left;
+}
+
+#rightCol {
+  width: 70%;
+  float: right;
+}
+
+#control {
+  float: right;
+  padding-top: 10cm;
+  border-top:  50cm;
+}
+
+div#paintColors div#index_2:hover {
+  background-color: white;
+}
+
+div#paintColors {
+  float: left;
+}
+
+div#paintCanvas {
+  float: left;
+}
+
+.swatch {
+  height : 15px;
+  width : 15px;
+}
+
+.canvas {
+  height : 15px;
+  width : 15px;
+}

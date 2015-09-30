@@ -1,0 +1,26 @@
+{
+  "name": "pixel-painter",
+  "version": "1.0.0",
+  "description": "PixelPainter ============",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/styel07/pixel-painter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/styel07/pixel-painter/issues"
+  },
+  "homepage": "https://github.com/styel07/pixel-painter#readme",
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "mocha": "^2.3.3"
+  }
+}
