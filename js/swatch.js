@@ -1,5 +1,5 @@
 function Swatch() {
-
+  this.selectedColor = 'white';
 }
 
 Swatch.prototype.createSwatch = function() {
@@ -37,7 +37,11 @@ Swatch.prototype.createSwatch = function() {
       colorDiv.style.border = '1px solid black';
       colorDiv.style.padding = '10px';
 
-      colorDiv.addEventListener('click', this.returnColor);
+      var self = this;
+      colorDiv.addEventListener('click', function() {
+        self.selectedColor = this.style.background;
+        console.log(self.selectedColor);
+      });
 
       leftContainer.appendChild(colorDiv);
     }
@@ -45,8 +49,4 @@ Swatch.prototype.createSwatch = function() {
   }
 };
 
-Swatch.prototype.returnColor = function() {
-  var selectedColor = this.style.background;
-  console.log(selectedColor);
-};
 

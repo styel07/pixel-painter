@@ -2,7 +2,7 @@
 function Canvas() {
 }
 
-Canvas.prototype.createGrid = function() {
+Canvas.prototype.createGrid = function(swatch) {
   var canvasDivIndex = 0;
   for (var rowIndex = 0; rowIndex < 15; rowIndex++) {
     for (var colIndex = 0; colIndex < 15; colIndex++) {
@@ -19,8 +19,10 @@ Canvas.prototype.createGrid = function() {
       canvasDiv.style.padding = '10px';
 
       canvasDiv.addEventListener('click', function(evt){
-        //canvasDiv.style = swatch color;
-        console.log(evt.target.id);
+      evt.target.style.background = swatch.selectedColor;
+
+       // evt.target.style.background = swatch.selectedColor;
+        console.log(evt.target.id, swatch.selectedColor);
       });
 
       rightContainer.appendChild(canvasDiv);
